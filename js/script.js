@@ -37,11 +37,14 @@ for (const player of team) {
   const teamMembers = document.querySelector('.team-members');
   // - creo la mia card, con immagine e il resto dei dati
   teamMembers.innerHTML += `
-  <div class="card text-center shadow " style="width: 18rem;">
-    <img src="${player.foto}">
+  <div class="card text-center shadow" style="width: 90%; margin: 50px auto;">
+    <div style="width: 300px; height: 400px">
+    <img src="${player.foto}" style="width: 100%; height: 100%; object-fit: cover">
+    </div>
+    
     <div class="card-body">
-      <h5 class="card-title">${player.nome}</h5>
-      <p class="card-text">${player.ruolo}</p>
+      <h4 class="card-title">${player.nome}</h4>
+      <p class="card-text; fs-4">${player.ruolo}</p>
     </div>
   </div>
   `;
