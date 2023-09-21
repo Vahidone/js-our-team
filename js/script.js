@@ -31,17 +31,30 @@ const team = [
 ];
 
 
-const teamMembers = document.querySelector('.team-members');
 
-// punto 2 
-for ( let player of team) {
-
-  console.log(player);
-
-  // punto 3, 4 , 5, 6, 7, 8
-  teamMembers.innerHTML += `<div> ${player.nome} è un ${player.ruolo} ......... ${player.foto}</div>`;
-
+for (const player of team) {
+  
+  const teamMembers = document.querySelector('.team-members');
+  // - creo la mia card, con immagine e il resto dei dati
+  teamMembers.innerHTML += `
+  <div class="card text-center shadow " style="width: 18rem;">
+    <img src="${player.foto}">
+    <div class="card-body">
+      <h5 class="card-title">${player.nome}</h5>
+      <p class="card-text">${player.ruolo}</p>
+    </div>
+  </div>
+  `;
 }
+
+
+
+
+
+
+
+
+
 
 
 
