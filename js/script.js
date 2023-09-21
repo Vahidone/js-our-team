@@ -38,10 +38,11 @@ for ( let player of team) {
 
   console.log(player);
 
-  // punto 3 
-  teamMembers.innerHTML += `<p> ${player.nome} è un ${player.ruolo} ......... ${player.foto}`;
+  // punto 3, 4 , 5, 6, 7, 8
+  teamMembers.innerHTML += `<div> ${player.nome} è un ${player.ruolo} ......... ${player.foto}</div>`;
 
 }
+
 
 
 
