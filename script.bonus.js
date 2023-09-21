@@ -70,6 +70,11 @@ for (const player of team) {
 
 }
 
+// punto 8 of Bonus 
+teamMembers.innerHTML = teamCards;
+
+
+
 
 
 
