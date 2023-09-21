@@ -26,7 +26,12 @@ const team = [
     nome: 'Francesco Totti',
     ruolo: 'attaccante',
     foto: "img/Francesco Totti.jpg",
-  }, 
+  },
+  {
+    nome: 'Marco Van Basten',
+    ruolo: 'attaccante',
+    foto: "img/marco-van-basten.png",
+  }
 
 ];
 
@@ -37,14 +42,11 @@ for (const player of team) {
   const teamMembers = document.querySelector('.team-members');
   
   teamMembers.innerHTML += `
-  <div class="card" style="width: 90%; margin: 50px auto;">
-    <div style="width: 300px; height: 400px">
+  <div class="card m-2  text-center" style="width: 270px;">
     <img src="${player.foto}" style="width: 100%; height: 100%; object-fit: cover">
-    </div>
-    
     <div class="card-body">
-      <h4 class="card-title" style="font-size: 40px; font-weight: bold">${player.nome}</h4>
-      <p class="card-text" style="font-size: 30px">${player.ruolo}</p>
+      <h5 class="card-title text-primary fw-bold">${player.nome}</h5>
+      <p class="card-text fw-bold">${player.ruolo}</p>
     </div>
   </div>
   `;
