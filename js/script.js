@@ -35,7 +35,7 @@ const team = [
 for (const player of team) {
   
   const teamMembers = document.querySelector('.team-members');
-  // - creo la mia card, con immagine e il resto dei dati
+  
   teamMembers.innerHTML += `
   <div class="card text-center shadow" style="width: 90%; margin: 50px auto;">
     <div style="width: 300px; height: 400px">
