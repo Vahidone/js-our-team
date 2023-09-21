@@ -65,6 +65,8 @@ for (const player of team) {
   playerRole.textContent = player.ruolo;
   playerCard.appendChild(playerRole);
 
+  // punto 7 of Bonus 
+  teamCards.push(playerCard);
 
 }
 
