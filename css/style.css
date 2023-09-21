@@ -1,7 +1,6 @@
 
-
-body{
-  background-color: #b4b0b0;
+body {
+  background-image: url(../img/bg-background.jpeg);
 }
 
 .team-members {
@@ -10,9 +9,23 @@ body{
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.6rem;
   font-weight: 900;
-  color: red;
+  color: white;
   text-align: center;
-  
+  cursor: pointer;
+  text-shadow: 10px 10px 10px rgba(227, 20, 20, 2);
 }
+
+.card {
+  border-radius: 10px;
+}
+
+.card:hover {
+  transition: all .5s;
+  scale: 1.05;
+
+}
+
+
+
