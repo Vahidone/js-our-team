@@ -30,3 +30,18 @@ const team = [
 
 ];
 
+
+const teamMembers = document.querySelector('.team-members');
+
+// punto 2 
+for ( let player of team) {
+
+  console.log(player);
+
+  // punto 3 
+  teamMembers.innerHTML += `<p> ${player.nome} è un ${player.ruolo} ......... ${player.foto}`;
+
+}
+
+
+
