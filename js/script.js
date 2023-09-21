@@ -1,5 +1,5 @@
 
-// punto 1 
+
 const team = [
 
   {
@@ -37,14 +37,14 @@ for (const player of team) {
   const teamMembers = document.querySelector('.team-members');
   
   teamMembers.innerHTML += `
-  <div class="card text-center shadow" style="width: 90%; margin: 50px auto;">
+  <div class="card" style="width: 90%; margin: 50px auto;">
     <div style="width: 300px; height: 400px">
     <img src="${player.foto}" style="width: 100%; height: 100%; object-fit: cover">
     </div>
     
     <div class="card-body">
-      <h4 class="card-title">${player.nome}</h4>
-      <p class="card-text; fs-4">${player.ruolo}</p>
+      <h4 class="card-title" style="font-size: 40px; font-weight: bold">${player.nome}</h4>
+      <p class="card-text" style="font-size: 30px">${player.ruolo}</p>
     </div>
   </div>
   `;
